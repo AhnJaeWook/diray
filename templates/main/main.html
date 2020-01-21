@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KLD</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+        .nav{
+            position: fixed;
+            top: 30px;
+            right: 40px;
+        }
+        .rogo{
+            position: absolute;
+            top: 45px;
+            left: 40px;
+            z-index: 50;
+            background: white;
+            padding: 0 10px 0 20px;
+        }
+        .line{
+            height: 60px;
+            border-bottom: 1px solid black;
+        }
+        .name{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .name a{
+            margin-top: 60px;
+            margin-bottom: 60px;
+            font-size: 28px;
+            font-weight: 400;
+            color: gray;
+        }
+
+        .body{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-bottom: 50px;
+        }
+
+        .footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: gray;
+            height: 150px;
+            font-size: 22px;
+            border-top: 1px solid black;
+        }
+        .footer a{
+            color: gray;
+            font-size: 22px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#"><img src="button.png" width="80px" height="80px"/></a>
+    </div>
+    <div class="rogo">
+        <a href="#"><img style="z-index: 100;" src="KLD_rogo.png" width="128px" height="40px"/></a>
+    </div>
+    <div class="line"></div>
+    <div class="name">
+        <a>임의연_님이 작성하신 일기입니다.</a>
+    </div>
+    <div class="body">
+        <a style="align-self: center;" href="#"><img src="pointer-left.png" width="30px" height="100px" /></a>
+        <a href="#"><img src="sample_1.jpg" width="250px" height="350px" /></a>
+        <a href="#"><img src="sample_2.jpg" width="250px" height="350px" /></a>
+        <a href="#"><img src="sample_3.jpg" width="250px" height="350px" /></a>
+        <a href="#"><img src="sample_4.jpg" width="250px" height="350px" /></a>
+        <a style="align-self: center;" href="#"><img src="pointer.png" width="30px" height="100px" /></a>
+    </div>
+    <div class="footer">
+        <a href="#">회사소개</a><a style="margin: 0 8px 0 8px">|</a>
+        <a href="#">이용약관</a><a style="margin: 0 8px 0 8px">|</a>
+        <a href="#">KLD_정책</a><a style="margin: 0 8px 0 8px">|</a>
+        <a href="#">고객센터</a><a style="margin: 0 8px 0 8px">&copy; LIKE LION X KMU</a>
+    </div>
+</body>
+</html>
