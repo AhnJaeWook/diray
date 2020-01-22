@@ -4,12 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>KLD</title>
     <style>
-        
+        body{
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .base-row{
+            display: flex;
+            flex-direction: row;
+        }
+        .base-column{
+            display: flex;
+            flex-direction: column;
+        }
+        .head{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .body{
+            display: flex;
+            flex-direction: row;
+        }
+        .body p {
+            font-size: 34px;
+            margin: 0;
+            margin-right: 50px;
+        }
+        .input{
+            background: lightgray;
+            padding: 5px 0 5px 0;
+            margin-bottom: 20px;
+        }
+        .textarea{
+            border: 1px solid gray;
+        }
+
+        .textarea div{
+            background: lightgray;
+            text-align: center;
+        }
+
+        .textarea textarea{
+            border: 0;
+            height: 330px;
+            padding: 0;
+        }
+
+        .flex-center{justify-content: center;}
+        .width-max{width: 100%;}
+        .width-input{width: 60%;}
+        .align-self{align-self: center;}
+
+        .footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: gray;
+            height: 150px;
+            font-size: 22px;
+            border-top: 1px solid black;
+        }
+        .footer a{
+            color: gray;
+            font-size: 22px;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
-    
+    <div class="head">
+        <img style="margin-top: 20px; margin-left: 40px;" src="KLD_rogo.png" width="128px" height="40px" />
+        <img src="head-line.png" width="600px" height="90px" />
+    </div>
+    <div class="body flex-center" style="height: 70px;">
+        <p>GET YOUR TIME FRESH YOUR LIFE !</p>
+    </div>
+    <div class="body flex-center" style="margin-top: 20px;">
+        <form class="base-column width-max" action="#">
+            <div class="base-row flex-center width-input align-self input">
+                title
+                <input style="width: 95%;" type="text" />
+            </div>
+            <div class="base-column flex-center width-input align-self textarea">
+                <div class="width-max">tool bar</div>
+                <textarea class="width-max"></textarea>
+            </div>
+            <div style="position: absolute; top: 17%; left: 70%;">
+                <img src="back.png" width="50px" height="50px"/>
+                <input type="image" src="save.png" alt="submit" width="50px" height="50px"/>
+            </div>
+            <div class="align-self width-input" style="width: 58%; height: 0px; border: 5px solid lightgray;"></div>
+        </form>
+    </div>
+    <div>
+        <img style="width: 100%; height: 5%;" src="footer-line.png"/>
+    </div>
+    <div class="footer">
+        <a href="#">회사소개</a><a style="margin: 0 8px 0 8px">|</a>
+        <a href="#">이용약관</a><a style="margin: 0 8px 0 8px">|</a>
+        <a href="#">KLD_정책</a><a style="margin: 0 8px 0 8px">|</a>
+        <a href="#">고객센터</a><a style="margin: 0 8px 0 8px">&copy; LIKE LION X KMU</a>
+    </div>
 </body>
 </html>
